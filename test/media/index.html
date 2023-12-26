@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Answer 1</span>
+    <p>java Script has three variables <br> 
+      1. is var which is default. <br>
+      2. is let in which we can do reasignment. <br>
+      3. is const in which we can't do reasingnment.</p>
+
+    <span>Answer 2</span>
+    <p>diffrence between == and === <br>
+     The == operator performs a loose equality comparison that performs type coercion if necessary to make the comparison possible. The === operator, on the other hand, performs a strict equality comparison that does not perform type coercion and requires the operands to have the same type (as well as the same value).</p>
+
+     <span>Answer 3</span>
+     <input type="submit" value="submit" onclick="bhide()" id="btn"><br>
+
+      <span>answer 4</span> 
+     <p id="arrow"></p>
+
+     <span>answer 5</span>
+     <p id="array-output"></p>
+
+
+     <span>answer 8</span>
+     <input type="password" name="" id="hidepass">
+     <input type="submit" value="submit" onclick="hide()">
+
+     <script>
+        function bhide(){
+        let button = document.getElementById("btn").style.display="none"
+        console.log(button)
+        }
+
+        //answer 4
+        let arrow = (a,b)=>{
+            let c = a*b
+            document.getElementById("arrow").innerHTML=c
+        }
+         arrow(5,5)
+
+         //answer 5
+         let array = [12,18,45,23,98,76,,56,90,84,68]
+         
+         let newarray = array.filter((value)=>{
+            return value>50
+         })
+         console.log(newarray)
+
+         //answer 6
+         function fname1(){
+            let x = "ha ha ha i am a function"
+            console.log(x)
+         }
+         setTimeout(fname1,5000)
+
+         //answer 7
+         function fname2(){
+            let x = "you can reapeat anytime"
+            console.log(x)
+         }
+        setInterval(fname2,2000)
+
+
+        //answer 8
+        function hide(){
+        let password = document.getElementById("hidepass")
+            if(password.type=="password"){
+                password.type="text"
+            }
+            else{
+                password.type="password"
+            }
+        }
+
+     </script>
+</body>
+</html>
